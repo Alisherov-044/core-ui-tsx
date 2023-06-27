@@ -1,0 +1,45 @@
+/****************
+** Core Styles **
+****************/
+:root {
+    font-size: $font-size--default;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    @include full-relative;
+}
+
+#root {
+    @extend body;
+    @include d-flex(column, unset, unset);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    @include img-normalize;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+button,
+input,
+textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+}

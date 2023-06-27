@@ -1,0 +1,24 @@
+// Abstract
+@import './abstract/mixins';
+@import './abstract/functions';
+
+// Base
+@import './base/variables';
+@import './base/core';
+
+// Components
+@import './components/form/input';
+@import './components/ui/buttons';
+@import './components/ui/icons';
+
+// Layouts
+@import './layouts/header.scss';
+@import './layouts/footer.scss';
+
+/****************
+** Main Styles **
+****************/
+.main {
+    position: relative;
+    flex: 1 1 auto;
+}
